@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Gabarito", sans-serif;
+}
+/* Header */
+
+.header {
+    width: 80%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-logo {
+    width: 140px;
+}
+.header-logo img {
+    width: 140px;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+.header-links ul {
+    display: flex;
+    gap: 40px;
+}
+.header-links li {
+    list-style: none;
+    font-weight: bold;
+}
+.language {
+    display: flex;
+    gap: 10px;
+}
+.signin button {
+    background-color: #84e900 ;
+    color:black;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 22px;
+    font-weight: bold;
+}
+/*Hero */
+
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.hero-links {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    margin-bottom: 25px;
+}
+.hero-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+}
+.search {
+    width: 650px;
+    margin: auto;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+.search input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.search button {
+    background-color: #84e900;
+    border: none;
+    border-radius: 25px;
+    padding: 12px 25px;
+}
+/* Things */
+
+.things-container {
+    width: 80%;
+    margin: 60px auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #84e900;
+    border-radius: 10px;
+}
+.things-image,.things-content {
+    width: 50%;
+}
+.things-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.things-content h1 {
+    font-size: 50px;
+}
+.things-content p {
+    font-size: 20px;
+    margin: 25px 0;
+}
+.things-content button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 25px;
+}
+/*Section Title */
+
+.section-title {
+    width: 85%;
+    margin: 40px auto 20px;
+}
+.section-title h1 {
+    font-size: 30px;
+}
+.section-title p {
+    margin-top: 5px;
+}
+/* Category and Cards */
+
+.category-container,.card-container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+.card {
+    width: 25%;
+}
+.card img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.card p {
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 8px;
+}
+/* Trip Banner */
+
+.trip-banner {
+    width: 90%;
+    margin: 60px auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #84e900;
+    border-radius: 10px;
+}
+.banner-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.banner-content {
+    flex: 1;
+}
+.trip-banner button {
+    border: none;
+    border-radius: 25px;
+    padding: 15px 25px;
+}
+/* Choice */
+
+.choice-container {
+    width: 80%;
+    margin: 60px auto;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+.choice-image,.choice-content {
+    width: 50%;
+}
+.choice-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.choice-content h1 {
+    font-size: 50px;
+}
+.choice-content p {
+    font-size: 20px;
+    margin: 25px 0;
+}
+.choice-content button {
+    border: none;
+    border-radius: 25px;
+    padding: 15px 25px;
+}
+/*Footer */
+
+.footer {
+    padding: 40px 8%;
+    background-color: #f7f7f7;
+}
+.footer-content {
+    display: flex;
+    gap: 80px;
+}
+.footer-column {
+    flex: 1;
+}
+.footer-column h4 {
+    margin-bottom: 20px;
+}
+.footer-column p {
+    margin-bottom: 12px;
+}
+.footer-bottom {
+    margin-top: 30px;
+}
+/* Tablet */
+
+@media (max-width: 768px) {
+    /* Header */
+    .header {
+        width: 90%;
+    }
+    .header-links {
+        display: none;
+    }
+    .language {
+        display: none;
+    }
+    /* Hero */
+
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero-links {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    .search {
+        width: 90%;
+    }
+    /* Things */
+
+    .things-container {
+        width: 90%;
+        flex-direction: column;
+        padding: 25px;
+    }
+    .things-image,.things-content {
+        width: 100%;
+    }
+    .things-content {
+        text-align: center;
+    }
+    .things-content h1 {
+        font-size: 40px;
+    }
+    /* Categories */
+
+    .category-container,.card-container {
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .category,.card {
+        width: calc(50% - 10px);
+    }
+    /* Trip Banner */
+
+    .trip-banner {
+        width: 90%;
+        flex-direction: column;
+        text-align: center;
+    }
+    /* Choice */
+
+    .choice-container {
+        width: 90%;
+        flex-direction: column;
+        padding: 25px;
+    }
+    .choice-image,.choice-content {
+        width: 100%;
+    }
+    .choice-content {
+        text-align: center;
+    }
+    .choice-content h1 {
+        font-size: 40px;
+    }
+    /* Footer */
+
+    .footer-content {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* Mobile */
+@media (max-width: 480px) {
+    /* Header */
+    .header {
+        width: 90%;
+    }
+    .header-logo,.header-logo img {
+        width: 110px;
+    }
+    .signin button {
+        padding: 10px 15px;
+    }
+    /* Hero */
+    .hero h1 {
+        font-size: 32px;
+    }
+    .hero-links {
+        gap: 15px;
+    }
+    .hero-links a {
+        font-size: 15px;
+    }
+    .search {
+        width: 100%;
+    }
+    .search button {
+        padding: 10px 15px;
+    }
+    /* Things */
+    .things-image img {
+        height: 250px;
+    }
+    .things-content h1 {
+        font-size: 32px;
+    }
+    /* Categories & Cards */
+    .category,.card {
+        width: 100%;
+    }
+    .category img,.card img {
+        height: 250px;
+    }
+    /* Banner */
+    .banner-image img {
+        width: 150px;
+        height: 150px;
+    }
+    /* Choice */
+    .choice-image img {
+        height: 250px;
+    }
+    .choice-content h1 {
+        font-size: 32px;
+    }
+}
